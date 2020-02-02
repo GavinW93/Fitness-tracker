@@ -144,10 +144,12 @@ if (completeButton) {
   completeButton.addEventListener("click", function (event) {
     shouldNavigateAway = true;
     handleFormSubmit(event);
+    console.log("completed")
   });
 }
 if (addButton) {
   addButton.addEventListener("click", handleFormSubmit);
+  console.log("added")
 }
 toast.addEventListener("animationend", handleToastAnimationEnd);
 
